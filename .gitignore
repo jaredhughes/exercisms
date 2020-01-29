@@ -1,0 +1,4 @@
+.elixir_ls
+_build
+.exercism
+node_modules
