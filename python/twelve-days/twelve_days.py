@@ -57,12 +57,7 @@ def daily_lyrics(day_num: int) -> str:
         last_line(day_num),
     ]
 
-    selected_lyrics = []
-
-    for i in range(1, day_num + 1):
-        selected_lyrics.append(lyrics[-i])
-
-    return "".join(selected_lyrics[::-1])
+    return "".join(lyrics[-day_num::1])
 
 
 def recite(start_verse, end_verse):
